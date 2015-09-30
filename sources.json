@@ -8,8 +8,8 @@
   {
     "title": "Vultr",
     "url": "https://www.vultr.com/faq/",
-    "location": ".tablelist td:nth-child(1)",
-    "host": ".tablelist td:nth-child(2)"
+    "location": ".table980 td:nth-child(1)",
+    "host": ".table980 td:nth-child(2)"
   },
   {
     "title": "DigitalOcean",
