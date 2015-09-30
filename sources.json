@@ -68,5 +68,27 @@
     "extra": {
       "probe": "TCPPing"
     }
+  },
+  {
+    "title": "BlueVM",
+    "url": "https://bluevm.com/about.php",
+    "location": "p strong",
+    "host": "#left li:nth-child(1)",
+    "host_replacements": {
+      "^.*:\\s*([\\w\\.]+)": "<a>$1</a>"
+    }
+  },
+  {
+    "title": "BudgetVM",
+    "url": "https://budgetvm.com/los-angeles-datacenter.php",
+    "index": ".panel:nth-child(1) li a",
+    "location": "h1.subheader",
+    "location_replacements": {
+      "^(.+) Data Center": "<a>$1</a>"
+    },
+    "host": ".panel:nth-child(2) li:nth-child(1)",
+    "host_replacements": {
+      "^.*:\\s*([\\d\\.]+)": "<a>$1</a>"
+    }
   }
 ]
