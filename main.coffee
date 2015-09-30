@@ -71,6 +71,9 @@ sources.forEach (source)->
     console.log "title = #{source.title}"
     if process.env.slaves
       console.log "nomasterpoll = yes"
+    if source.extra
+      for key, value of target.extra
+        console.log "#{key} = #{value}"
     console.log ""
     for target in result
       unless source.excludes and target.host in source.excludes
@@ -80,7 +83,4 @@ sources.forEach (source)->
         console.log "host = #{target.host}"
         if process.env.slaves
           console.log "slaves = #{process.env.slaves}"
-        if target.extra
-          for key, value of target.extra
-            console.log "#{key} = #{value}"
         console.log ""
