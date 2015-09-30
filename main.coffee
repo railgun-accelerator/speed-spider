@@ -72,7 +72,7 @@ sources.forEach (source)->
     if process.env.slaves
       console.log "nomasterpoll = yes"
     if source.extra
-      for key, value of target.extra
+      for key, value of source.extra
         console.log "#{key} = #{value}"
     console.log ""
     for target in result
