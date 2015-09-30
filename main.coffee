@@ -69,6 +69,7 @@ sources.forEach (source)->
     console.log "+ #{source.title.replace(/\W+/g, '_').replace(/^_+|_+$/g, '').toLowerCase()}"
     console.log "menu = #{source.title}"
     console.log "title = #{source.title}"
+    console.log "nomasterpoll = yes"
     console.log ""
     for target in result
       unless source.excludes and target.host in source.excludes
