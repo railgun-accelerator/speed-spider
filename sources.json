@@ -64,6 +64,9 @@
       "^((?:(?!china).)*)$": "$1.blob.core.windows.net",
       "^(.*china.*)$": "$1.blob.core.chinacloudapi.cn"
     },
-    "excludes": ["cdn.blob.core.windows.net"]
+    "excludes": ["cdn.blob.core.windows.net"],
+    "extra": {
+      "probe": "TCPPing"
+    }
   }
 ]

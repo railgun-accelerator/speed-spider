@@ -69,7 +69,8 @@ sources.forEach (source)->
     console.log "+ #{source.title.replace(/\W+/g, '_').replace(/^_+|_+$/g, '').toLowerCase()}"
     console.log "menu = #{source.title}"
     console.log "title = #{source.title}"
-    console.log "nomasterpoll = yes"
+    if process.env.slaves
+      console.log "nomasterpoll = yes"
     console.log ""
     for target in result
       unless source.excludes and target.host in source.excludes
@@ -79,4 +80,7 @@ sources.forEach (source)->
         console.log "host = #{target.host}"
         if process.env.slaves
           console.log "slaves = #{process.env.slaves}"
+        if target.extra
+          for key, value of target.extra
+            console.log "#{key} = #{value}"
         console.log ""
