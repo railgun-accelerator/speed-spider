@@ -1,20 +1,17 @@
 [
   {
-    "id": "Linode",
     "title": "Linode",
     "url": "https://www.linode.com/speedtest",
     "location": ".speedtest-table td:nth-child(1)",
     "host": ".speedtest-table td:nth-child(2)"
   },
   {
-    "id": "Vultr",
     "title": "Vultr",
     "url": "https://www.vultr.com/faq/",
     "location": ".tablelist td:nth-child(1)",
     "host": ".tablelist td:nth-child(2)"
   },
   {
-    "id": "DigitalOcean",
     "title": "DigitalOcean",
     "url": "http://speedtest-sfo1.digitalocean.com/",
     "location": "dt a",
@@ -24,7 +21,6 @@
     }
   },
   {
-    "id": "SoftLayer",
     "title": "SoftLayer",
     "url": "http://www.softlayer.com/data-centers",
     "location": ".col1.ssl-right-bord",
@@ -35,14 +31,12 @@
     "excludes": ["speedtest.dal02.softlayer.com"]
   },
   {
-    "id": "VPS_to",
     "title": "VPS.to",
     "url": "https://vps.to/speedtest/",
     "location": ".speedtest td:nth-child(1)",
     "host": ".speedtest td:nth-child(2)"
   },
   {
-    "id":"VPS_NET",
     "title": "VPS.NET",
     "url": "http://www.cloudtestfiles.net/js/global.js",
     "parser": "regexp",
@@ -50,20 +44,17 @@
     "host": ": '(\\d+\\.\\d+\\.\\d+\\.\\d+)'"
   },
   {
-    "id":"Atlantic_Net",
     "title":"Atlantic.Net",
     "url":"https://www.atlantic.net/speed-test/",
     "location": "td:nth-child(1)",
     "host": "td:nth-child(3)"
   },
   {
-    "id":"BuyVM",
     "title":"BuyVM",
     "url":"http://lv-test.buyvm.net/",
     "parser": "lookingglass"
   },
   {
-    "id":"Azure",
     "title":"Azure",
     "url":"http://www.azurespeed.com/bundles/azurespeed",
     "parser":"regexp",
