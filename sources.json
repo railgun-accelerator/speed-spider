@@ -90,5 +90,14 @@
     "host_replacements": {
       "^.*:\\s*([\\d\\.]+)": "<a>$1</a>"
     }
-  }
+  },
+  [
+    {
+      "title": "LOCVPS",
+      "url": "http://www.locvps.com/networks/",
+      "parser": "regexp",
+      "location": ">\\s*([\\-\\w\\u4e00-\\u9fa5]+)测试节点",
+      "host": "测试节点：(?:<.+>)?([\\d\\.]+)"
+    }
+  ]
 ]

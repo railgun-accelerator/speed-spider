@@ -84,7 +84,7 @@ fetch = (source, callback)->
 
 sources.forEach (source)->
   fetch source, (result)->
-    console.log "+ #{source.title.replace(/\W+/g, '_').replace(/^_+|_+$/g, '').toLowerCase()}"
+    console.log "+ #{source.title.replace(/[^\w\u4e00-\u9fa5]+/g, '_').replace(/^_+|_+$/g, '').toLowerCase()}"
     console.log "menu = #{source.title}"
     console.log "title = #{source.title}"
     if process.env.slaves
@@ -95,7 +95,7 @@ sources.forEach (source)->
     console.log ""
     for target in result
       unless source.excludes and target.host in source.excludes
-        console.log "++ #{target.title.replace(/\W+/g, '_').replace(/^_+|_+$/g, '').toLowerCase()}"
+        console.log "++ #{target.title.replace(/[^\w\u4e00-\u9fa5]+/g, '_').replace(/^_+|_+$/g, '').toLowerCase()}"
         console.log "menu = #{target.title}"
         console.log "title = #{target.title}"
         console.log "host = #{target.host}"
