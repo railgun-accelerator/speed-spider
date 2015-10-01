@@ -16,7 +16,7 @@
     "url": "http://speedtest-sfo1.digitalocean.com/",
     "location": "dt a",
     "host": "dt",
-    "host_replacements":{
+    "host_replacements": {
       "<a href=\"http://(.+)\">.+</a>": "<a>$1</a>"
     }
   },
@@ -28,7 +28,9 @@
       "<br>": ", "
     },
     "host": ".col7.ssl-bot-bord",
-    "excludes": ["speedtest.dal02.softlayer.com"]
+    "excludes": [
+      "speedtest.dal02.softlayer.com"
+    ]
   },
   {
     "title": "VPS.to",
@@ -44,27 +46,29 @@
     "host": ": '(\\d+\\.\\d+\\.\\d+\\.\\d+)'"
   },
   {
-    "title":"Atlantic.Net",
-    "url":"https://www.atlantic.net/speed-test/",
+    "title": "Atlantic.Net",
+    "url": "https://www.atlantic.net/speed-test/",
     "location": "td:nth-child(1)",
     "host": "td:nth-child(3)"
   },
   {
-    "title":"BuyVM",
-    "url":"http://lv-test.buyvm.net/",
+    "title": "BuyVM",
+    "url": "http://lv-test.buyvm.net/",
     "parser": "lookingglass"
   },
   {
-    "title":"Azure",
-    "url":"http://www.azurespeed.com/bundles/azurespeed",
-    "parser":"regexp",
-    "location":"region:\"(.+?)\"",
+    "title": "Azure",
+    "url": "http://www.azurespeed.com/bundles/azurespeed",
+    "parser": "regexp",
+    "location": "region:\"(.+?)\"",
     "host": "storage:\"(\\w+)\"",
     "host_replacements": {
       "^((?:(?!china).)*)$": "$1.blob.core.windows.net",
       "^(.*china.*)$": "$1.blob.core.chinacloudapi.cn"
     },
-    "excludes": ["cdn.blob.core.windows.net"],
+    "excludes": [
+      "cdn.blob.core.windows.net"
+    ],
     "extra": {
       "probe": "TCPPing"
     }
@@ -91,13 +95,11 @@
       "^.*:\\s*([\\d\\.]+)": "<a>$1</a>"
     }
   },
-  [
-    {
-      "title": "LOCVPS",
-      "url": "http://www.locvps.com/networks/",
-      "parser": "regexp",
-      "location": ">\\s*([\\-\\w\\u4e00-\\u9fa5]+)测试节点",
-      "host": "测试节点：(?:<.+>)?([\\d\\.]+)"
-    }
-  ]
+  {
+    "title": "LOCVPS",
+    "url": "http://www.locvps.com/networks/",
+    "parser": "regexp",
+    "location": ">\\s*([\\-\\w\\u4e00-\\u9fa5]+)测试节点",
+    "host": "测试节点：(?:<.+>)?([\\d\\.]+)"
+  }
 ]
