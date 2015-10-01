@@ -1,6 +1,7 @@
 url = require 'url'
-request = require('request')
-cheerio = require('cheerio')
+request = require 'request'
+cheerio = require 'cheerio'
+pinyin = require 'pinyin'
 sources = require './sources.json'
 
 fetch = (source, callback)->
