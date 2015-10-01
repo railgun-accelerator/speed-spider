@@ -101,5 +101,15 @@
     "parser": "regexp",
     "location": ">\\s*([\\-\\w\\u4e00-\\u9fa5]+)测试节点",
     "host": "测试节点：(?:<.+>)?([\\d\\.]+)"
+  },
+  {
+    "title": "Hostshare",
+    "parser": "static",
+    "targets": [
+      {
+        "title": "美国SSD",
+        "host": "198.52.120.1"
+      }
+    ]
   }
 ]
