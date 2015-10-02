@@ -70,7 +70,8 @@
       "cdn.blob.core.windows.net"
     ],
     "extra": {
-      "probe": "TCPPing"
+      "probe": "TCPPing",
+      "pings": 3
     }
   },
   {
