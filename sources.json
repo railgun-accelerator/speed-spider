@@ -57,24 +57,6 @@
     "parser": "lookingglass"
   },
   {
-    "title": "Azure",
-    "url": "http://www.azurespeed.com/bundles/azurespeed",
-    "parser": "regexp",
-    "location": "region:\"(.+?)\"",
-    "host": "storage:\"(\\w+)\"",
-    "host_replacements": {
-      "^((?:(?!china).)*)$": "$1.blob.core.windows.net",
-      "^(.*china.*)$": "$1.blob.core.chinacloudapi.cn"
-    },
-    "excludes": [
-      "cdn.blob.core.windows.net"
-    ],
-    "extra": {
-      "probe": "TCPPing",
-      "pings": 3
-    }
-  },
-  {
     "title": "BlueVM",
     "url": "https://bluevm.com/about.php",
     "location": "p strong",
