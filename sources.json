@@ -9,7 +9,7 @@
     "title": "Vultr",
     "url": "https://www.vultr.com/faq/",
     "location": ".table980 td:nth-child(1)",
-    "host": ".table980 td:nth-child(2)"
+    "host": ".table980 td:nth-child(2) .ipv4_test"
   },
   {
     "title": "DigitalOcean",
